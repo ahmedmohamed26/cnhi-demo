@@ -32,49 +32,49 @@ export default function ServicesProviderForm({
   const usersOptions = allUsers?.data
     ?.map((el) => {
       return {
-        value: i18n.language == "ar" ? el.fullName : el.fullNameEn, //endPoint take name not id
+        value: i18n.language == "ar" ? el.fullName : el.fullNameEn,
         label: i18n.language == "ar" ? el.fullName : el.fullNameEn,
       };
     })
     ?.filter((el) => el.label !== null);
 
   const permissionsOptions = [
-    {
-      value: 0,
-      label: t("administrator"),
-    },
-    {
-      value: 1,
-      label: t("employeee"),
-    },
+    // {
+    //   value: 0,
+    //   label: t("administrator"),
+    // },
+    // {
+    //   value: 1,
+    //   label: t("employeee"),
+    // },
     {
       value: 2,
-      label: t("restaurant"),
+      label: t("hospitalityOfficer"),
     },
-    {
-      value: 3,
-      label: t("reception"),
-    },
+    // {
+    //   value: 3,
+    //   label: t("reception"),
+    // },
     {
       value: 4,
-      label: t("security"),
+      label: t("securityOfficer"),
     },
-    {
-      value: 5,
-      label: t("restaurantAdministrator"),
-    },
-    {
-      value: 6,
-      label: t("restaurantWaiter"),
-    },
-    {
-      value: 7,
-      label: t("busDriver"),
-    },
-    {
-      value: 8,
-      label: t("vipDriver"),
-    },
+    // {
+    //   value: 5,
+    //   label: t("restaurantAdministrator"),
+    // },
+    // {
+    //   value: 6,
+    //   label: t("restaurantWaiter"),
+    // },
+    // {
+    //   value: 7,
+    //   label: t("busDriver"),
+    // },
+    // {
+    //   value: 8,
+    //   label: t("vipDriver"),
+    // },
   ];
 
   const daysOfWeek = [
