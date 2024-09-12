@@ -53,10 +53,10 @@ export default function AuthLayout({ ...rest }) {
           }}
           className="my-3"
         >
-          version {import.meta.env.VITE_VERSION}
+          version 1.0.0
         </div>
       </Flex>
-
+      {/* {import.meta.env.VITE_VERSION} */}
       <div
         id="auth-right"
         className="h-screen"
